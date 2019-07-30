@@ -1,16 +1,16 @@
-const path = require('path');
+const path = require('path'); // Modul für Pfade
 
-// Basename file name
+// Name der Ausgeführten Datei
 console.log(path.basename(__filename));
 
-// Directory name
+// Ordnername von der ausgeführten Datei
 console.log(path.dirname(__filename));
 
-// File extension
+// Dateiendung der ausgeführten Datei
 console.log(path.extname(__filename));
 
-// Create path object
+// Zusammensetzung der Dateiendung und Namen der ausgeführten Datei
 console.log(path.parse(__filename).base);
 
-// Concatenate paths
+// Selbst zusammengesetzter Pfad
 console.log(path.join(__dirname, 'test', 'hello.html'));

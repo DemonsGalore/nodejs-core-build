@@ -1,9 +1,10 @@
-const http = require('http');
+const http = require('http'); // Modul für http Server
 
-// Create server object
+// Erstellen eines Server Objektes
 http.createServer((req, res) => {
-  // Write response
+  // Response
   res.write('Hello World');
   res.end();
 
+    //starten(Server Port => Log in ComandLine) 
 }).listen(5000, () => console.log('Server running...'));

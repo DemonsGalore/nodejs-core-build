@@ -1,22 +1,22 @@
-const os = require('os');
+const os = require('os'); //modul zum anzeigen von Systeminformationen
 
 // Platform
 console.log(os.platform());
 
-// CPU Arch
+// CPU Architektur
 console.log(os.arch());
 
-// CPU Core info
+// CPU Core Info
 console.log(os.cpus());
 
-// Free memory
+// Freier Arbeitsspeicher
 console.log(os.freemem());
 
-// Total memory
+// Gesamter Arbeitspeicher
 console.log(os.totalmem());
 
-// Home dir
+// Home Verzeichnis
 console.log(os.homedir());
 
-// Uptime
+// PC Laufzeit
 console.log(os.uptime());

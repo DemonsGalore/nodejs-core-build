@@ -1,29 +1,29 @@
 const url = require('url');
 
-const myUrl = new URL('http://demonsgalore.de/hello.html?id=100&status=active');
+const myUrl = new URL('http://kekse.blubb.com:8000/hello.html?id=100&status=active');
 
-// Serialized URL
+// URL anzeigen
 console.log(myUrl.href);
 console.log(myUrl.toString());
 
-// Host (root domain)
+// Host 
 console.log(myUrl.host);
 
-// Hostname (does not give port)
+// Hostname 
 console.log(myUrl.hostname);
 
-// Pathname
+// Pfad
 console.log(myUrl.pathname);
 
-// Serialized query
+// Parameter als String
 console.log(myUrl.search);
 
-// Params object
+// Parameter als Objekt
 console.log(myUrl.searchParams);
 
-// Add param
+// Paramelter hinzufügen und wieder ausgeben
 myUrl.searchParams.append('abc', '123');
 console.log(myUrl.searchParams);
 
-// Loop through params
+// Parameter einzeln anzeigen
 myUrl.searchParams.forEach((value, name) => console.log(`${name}: ${value}`));

@@ -1,17 +1,13 @@
-const EventEmitter = require('events');
+const EventEmitter = require('events'); //Modul für Eventtrigger
 
-// Create class
+// Klasse erzeugen
 class MyEmitter extends EventEmitter {};
 
-// Init object
+// Objekt initialisieren
 const myEmitter = new MyEmitter();
 
 // Event listener
 myEmitter.on('event', () => console.log('Event fired'));
 
-// Init event
-myEmitter.emit('event');
-myEmitter.emit('event');
-myEmitter.emit('event');
-myEmitter.emit('event');
+// Trigger Event
 myEmitter.emit('event');
